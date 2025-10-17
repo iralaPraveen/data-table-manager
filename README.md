@@ -192,16 +192,16 @@ Navigate to [http://localhost:3000](http://localhost:3000)
 ## 📸 Screenshots
 
 ### Main Dashboard
-![Main Dashboard](./images/DataTable view.png)
+![Main Dashboard](./images/DataTable-view.png)
 
 ### Add Column
-![Adding Column](./images/Adding of column.png)
+![Adding Column](./images/Adding-of-column.png)
 
 ### Import CSV
 ![Import CSV Feature](./images/resultbanner.png)
 
 ### Column Management
-![Added New Column](./images/Newly added Column.png)
+![Added New Column](./images/Newly-added-Column.png)
 
 ### Error handling
-![toast result](./images/Error picture.png)
+![toast result](./images/Error-picture.png)
