@@ -146,27 +146,43 @@ Navigate to [http://localhost:3000](http://localhost:3000)
 
 ## 📁 Project Structure
 
-data-table-manager/
-├── src/
-│ ├── app/
-│ │ ├── components/
-│ │ │ ├── DataTable.tsx # Main table component
-│ │ │ ├── ImportExport.tsx # CSV import/export logic
-│ │ │ ├── ColumnManager.tsx # Column management modal
-│ │ │ ├── ReduxProvider.tsx # Redux store provider
-│ │ │ └── ThemeRegistry.tsx # MUI theme provider
-│ │ ├── layout.tsx # Root layout
-│ │ └── page.tsx # Home page
-│ ├── redux/
-│ │ ├── store.ts # Redux store configuration
-│ │ ├── tableSlice.ts # Table state slice
-│ │ └── hooks.ts # Typed Redux hooks
-│ ├── types/
-│ │ └── table.ts # TypeScript interfaces
-│ └── utils/
-│ └── csvHandler.ts # CSV parsing/export utilities
-├── public/ # Static assets
-├── next.config.mjs # Next.js configuration
-├── tsconfig.json # TypeScript configuration
-├── package.json # Dependencies
-└── README.md # Documentation
+### Source Code (`src/`)
+- **app/** - Next.js App Router pages and components
+  - **components/** - Reusable React components
+    - `DataTable.tsx` - Main table component with sorting and pagination
+    - `ImportExport.tsx` - CSV import/export functionality
+    - `ColumnManager.tsx` - Column management modal
+    - `ReduxProvider.tsx` - Redux store provider wrapper
+    - `ThemeRegistry.tsx` - Material UI theme configuration
+  - `layout.tsx` - Root layout with providers
+  - `page.tsx` - Home page component
+
+- **redux/** - State management
+  - `store.ts` - Redux store configuration with Redux Persist
+  - `tableSlice.ts` - Table state slice with reducers
+  - `hooks.ts` - Typed Redux hooks (useAppDispatch, useAppSelector)
+
+- **types/** - TypeScript type definitions
+  - `table.ts` - Interfaces for TableRow, ColumnConfig, TableState
+
+- **utils/** - Utility functions
+  - `csvHandler.ts` - CSV parsing and export logic with validation
+
+### Configuration Files
+- `next.config.mjs` - Next.js configuration
+- `tsconfig.json` - TypeScript compiler options
+- `package.json` - Project dependencies and scripts
+- `README.md` - Project documentation
+
+## NOTE
+
+### Required Columns
+- `name` - String (required)
+- `email` - Valid email format (required)
+- `age` - Number between 0-150 (required)
+- `role` - String (required)
+
+### Optional Columns
+- `department` - String
+- `location` - String
+- Any custom fields you add
