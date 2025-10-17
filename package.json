@@ -9,16 +9,30 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/cache": "^11.14.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^7.3.4",
+    "@mui/material": "^7.3.4",
+    "@mui/material-nextjs": "^7.3.3",
+    "@reduxjs/toolkit": "^2.9.1",
+    "file-saver": "^2.0.5",
+    "next": "14.2.33",
+    "papaparse": "^5.5.3",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.33"
+    "react-hook-form": "^7.65.0",
+    "react-redux": "^9.2.0",
+    "redux-persist": "^6.0.0"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/file-saver": "^2.0.7",
+    "@types/node": "^20.19.22",
+    "@types/papaparse": "^5.3.16",
+    "@types/react": "^18.3.26",
+    "@types/react-dom": "^18.3.7",
     "eslint": "^8",
-    "eslint-config-next": "14.2.33"
+    "eslint-config-next": "14.2.33",
+    "typescript": "^5"
   }
 }
